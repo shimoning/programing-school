@@ -1,0 +1,40 @@
+body {
+  background: #eaf0c1;
+  font-size: 2vw;
+}
+h1 {
+  font-size: 3vw;
+  text-align: center;
+  background-color: #f7e8b3;
+  color: black;
+  border-top: gray 2px dashed;
+  border-bottom: gray 2px dashed;
+}
+h2 {
+  font-size: 2.25vw;
+  background-color: #047236;
+  color: white;
+  padding: .2em .5em;
+  border-left: rgb(241, 117, 40) .5em solid;
+}
+#container {
+  display: flex;
+}
+#screen, #description {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+#game-board {
+  margin: 0 auto;
+}
+
+.code {
+  border-left: black .25em solid;
+  background-color: white;
+  padding: .2em .5em;
+  font-size: 1.5vw;
+}
+.hide {
+  display: none;
+}
