@@ -6,4 +6,4 @@
 * [pentomino/preparation.html](準備をしよう)
 * [pentomino/step1.html](遊んでみよう)
 * [pentomino/step2.html](はみ出ないようにしよう)
-* [pentomino/step3.html](回転してみよう)
+* [pentomino/step3.html](回転させてみよう)

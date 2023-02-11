@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>テトリス風ゲーム</title>
+    <link rel="stylesheet" href="./common/style.css">
+</head>
+
+<body onload="init()">
+    <h1>はみ出ないようにしよう</h1>
+    <div id="container">
+        <div id="screen">
+            <canvas id="game-board"></canvas>
+        </div>
+        <div id="description">
+            <h2>やってみよう</h2>
+            <ol>
+                <li>プログラムの中で、ブロックを移動しているところを探そう</li>
+                <li>canMove を読んでみよう</li>
+                <li>&lt; と &gt;&equals; の違い</li>
+                <li>どこで canMove を実行するとよいだろうか？</li>
+                <li>やってみよう！</li>
+            </ol>
+        </div>
+    </div>
+    <script src="./common/script.js"></script>
+    <script src="./common/game.js"></script>
+    <script src="./common/addons/canMove.js"></script>
+    <script src="./answers/step2.js"></script>
+</body>
+</html>
