@@ -2,22 +2,22 @@
 // 移動できるか確認する
 // ==================================================
 
+// shape: ブロックの形
 // dx: 左右の移動する数
 // dy: 上下の移動する数
 // d って？: デルタという数学の用語で、「変化する量」という意味だよ
-function canMove(dx, dy) {
+function canMove(shape, dx, dy) {
   // 縦方向の数を数える
-  const rowCount = block.SHAPE.length;
+  const rowCount = shape.length;
 
   // 横方向の数を数える
-  const columnCount = block.SHAPE[0].length;
+  const columnCount = shape[0].length;
 
-  // 上から順番に表示する
-  for (let y = 0; y < rowCount; y++) {
-    // 左から順番に表示する
-    for (let x = 0; x < columnCount; x++) {
+  // 調べる
+  for (let y = 0; y < rowCount; y++) { // 上から順番に調べる
+    for (let x = 0; x < columnCount; x++) { // 左から順番に調べる
       // その場所にブロックがあれば
-      if (block.SHAPE[y][x]) {
+      if (shape[y][x]) {
         // 次に移動する予定の位置を計算
         const nextPositionX = offsetX + x + dx;
         const nextPositionY = offsetY + y + dy;
