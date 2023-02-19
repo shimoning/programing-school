@@ -2,11 +2,14 @@
 // 移動できるか確認する
 // ==================================================
 
-// shape: ブロックの形
 // dx: 左右の移動する数
 // dy: 上下の移動する数
-// d って？: デルタという数学の用語で、「変化する量」という意味だよ
-function canMove(shape, dx, dy) {
+// targetShape: ブロックの形
+// dx, dy についている d ってなんだろう？ => デルタという数学で使う用語の頭文字で、「変化する量」という意味だよ
+function canMove(dx, dy, targetShape) {
+  // targetShape が指定されていたら、targetShape を使う、なければ現在の形 (block.SHAPE) をチェックするよ
+  const shape = targetShape ? targetShape : block.SHAPE;
+
   // 縦方向の数を数える
   const rowCount = shape.length;
 

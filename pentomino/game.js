@@ -86,7 +86,7 @@ let block = BLOCKS[type];
 function init() {
   activate();
   drawGameScreen();
-  drawBlock()
+  drawBlock();
 }
 
 // ゲーム画面起動

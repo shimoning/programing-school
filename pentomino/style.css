@@ -17,6 +17,16 @@ h2 {
   padding: .2em .5em;
   border-left: rgb(241, 117, 40) .5em solid;
 }
+p {
+  margin: .5em 0;
+}
+hr.dot {
+  width: .5em;
+  height: .25em;
+  margin: 1em auto;
+  background-color: #047236;
+}
+
 #container {
   display: flex;
 }
@@ -37,4 +47,64 @@ h2 {
 }
 .hide {
   display: none;
+}
+
+a {
+  color: #047236;
+}
+
+a.external-link, a.internal-link,
+a.go-prev, a.go-next, a.go-hint {
+  display: inline-block;
+  background-color: #fffafa;
+  padding: .125em .75em;
+  margin: .125em;
+  border-radius: .25em;
+}
+a.external-link::after {
+  content: "\f08e";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  display: inline-block;
+  margin-left: .5em;
+}
+
+a.go-prev::before {
+  content: "\f060";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  display: inline-block;
+  margin-right: .5em;
+}
+a.go-next::after {
+  content: "\f061";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  display: inline-block;
+  margin-left: .5em;
+}
+
+a.go-hint {
+  background-color: rgb(241, 117, 40);
+  color: white;
+  font-size: 1.25vw;
+}
+a.go-hint::after {
+  content: "\f0a6";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  display: inline-block;
+  margin-left: .5em;
+}
+
+nav.step {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+nav.step .go-prev {
+  align-self: flex-start;
+}
+nav.step .go-next {
+  align-self: flex-end;
 }

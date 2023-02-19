@@ -2,6 +2,13 @@
 // 修正版: ブロックを時計回りに回転させる
 // ==================================================
 function rotateBlock() {
+  console.log('rotateBlock', {fallTimer})
+  // タイマーが停止中の場合
+  if (! fallTimer) {
+    // 回転させない
+    return;
+  }
+
   // 縦方向の数を数える
   const rowCount = block.SHAPE.length;
 
@@ -20,7 +27,8 @@ function rotateBlock() {
   }
 
   // 回転して良いかチェックする
-  if (canMove(newShape, 0, 0)) {
+  // 回転しているだけだから、x も y も移動していないよ！ = 0
+  if (canMove(0, 0, newShape)) {
     block.SHAPE = newShape
   }
 }

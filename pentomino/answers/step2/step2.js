@@ -5,25 +5,25 @@ document.removeEventListener('keydown', operation);
 function operation2 (e) {
   switch (e.code) {
     case 'ArrowUp': // 上
-      if (canMove(block.SHAPE, 0, -1)) {
+      if (canMove(0, -1)) {
         // 移動できる
         offsetY--;
       }
       break;
     case 'ArrowDown': // 下
-      if (canMove(block.SHAPE, 0, 1)) {
+      if (canMove(0, 1)) {
         // 移動できる
         offsetY++;
       }
       break;
     case 'ArrowRight': // 右
-      if (canMove(block.SHAPE, 1, 0)) {
+      if (canMove(1, 0)) {
         // 移動できる
         offsetX++;
       }
       break;
     case 'ArrowLeft': // 左
-      if (canMove(block.SHAPE, -1, 0)) {
+      if (canMove(-1, 0)) {
         // 移動できる
         offsetX--;
       }

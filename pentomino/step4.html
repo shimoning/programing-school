@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>自動で落ちるようにしよう | パズルゲームを作ってみよう</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel ="stylesheet" href="../fa/css/all.min.css">
+</head>
+
+<body onload="init()">
+    <h1>自動で落ちるようにしよう</h1>
+    <div id="container">
+        <div id="screen">
+            <canvas id="game-board"></canvas>
+        </div>
+        <div id="description">
+            <h2>やってみよう</h2>
+            <ol>
+                <li>addons/autoFall.js を開いてみよう</li>
+                <li>autoFall を読んでみよう</li>
+                <li>どこで使えばいいかな <a href="./answers/step4/index.html" class="go-hint">こうなると正解！</a></li>
+                <li>上に戻れないようにしよう <a href="./answers/step4/index2.html" class="go-hint">こうなると正解！</a></li>
+                <li>下まで行ったら、<br>回転できないようにしよう <a href="./answers/step4/index3.html" class="go-hint">こうなると正解！</a></li>
+            </ol>
+
+            <h2>できたかな？</h2>
+            <!-- <p>
+                できたら次へ進もう。
+            </p> -->
+            <hr class="dot">
+            <nav class="step">
+                <a href="step3.html" class="go-prev">STEP3</a>
+                <!-- <a href="step5.html" class="go-next">STEP5</a> -->
+            </nav>
+        </div>
+    </div>
+    <script src="./game.js"></script>
+    <script src="./script.js"></script>
+    <script src="./addons/canMove.js"></script>
+    <script src="./addons/rotateBlock.js"></script>
+    <script src="./addons/autoFall.js"></script>
+</body>
+</html>
